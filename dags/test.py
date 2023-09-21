@@ -2,7 +2,7 @@ import os
 import io
 
 from datetime import datetime
-from airflow.utils import days_ago
+from airflow.utils.dates import days_ago
 from airflow import DAG
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.models.connection import Connection
