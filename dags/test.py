@@ -19,7 +19,7 @@ con = Connection(
 def task_test_query():
     hook = PostgresHook(postgres_conn_id='cvat_postgres')
     
-    rows = hook.get_records("SELECT * FROM users")
+    rows = hook.get_records("SELECT * FROM public.auth_user")
     
     for row in rows:
         print(row)
