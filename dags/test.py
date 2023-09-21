@@ -25,7 +25,7 @@ dag = DAG(
 def task_test_query():
     hook = PostgresHook(postgres_conn_id='cvat_postgres')
     
-    job_ids = hook.get_records("SELECT job_id FROM public.engine_job WHERE status = 'acceptance' and update_date < current_date - 1 and update_date >= current_date")
+    job_ids = hook.get_records("SELECT id FROM public.engine_job WHERE status = 'acceptance' and update_date < current_date - 1 and update_date >= current_date")
     
     for job_id in job_ids:
         shape_label_rows = hook.get_records("SELECT label_id, points FROM public.engine_labelshape WHERE job_id = %s", parameters=(job_id))
