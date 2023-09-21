@@ -16,13 +16,9 @@ con = Connection(
     password = ''
 )
 
-default_args = {
-    "start_date ": days_ago(n=1)
-}
-
 dag = DAG(
     dag_id = "test-dag",
-    default_args = default_args,
+    start_date = days_ago(1),
     schedule_interval = "@once"
 )
 
