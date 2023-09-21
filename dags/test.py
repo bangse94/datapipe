@@ -25,11 +25,20 @@ dag = DAG(
 def task_test_query():
     hook = PostgresHook(postgres_conn_id='cvat_postgres')
     
-    rows = hook.get_records("SELECT * FROM public.auth_user")
+    job_ids = hook.get_records("SELECT job_id FROM public.engine_job WHERE status = 'acceptance' and update_date < current_date - 1 and update_date >= current_date")
     
-    for row in rows:
-        print(row)
-
+    for job_id in job_ids:
+        shape_label_rows = hook.get_records("SELECT label_id, points FROM public.engine_labelshape WHERE job_id = %s", parameters=(job_id))
+        #track_label_rows = hook.get_records("SELECT id, label_id points FROM public.engine_trackedshape WHERE job_id = %s", parameters=(job_id))
+        track_label_rows = hook.get_records(
+            "SELECT a.label_id, a.points FROM public.engine_labeltracked a JOIN public.engine_trackedshape b ON a.id = b.track_id WHERE a.job_id = %s", parameters=(job_id)
+        )
+        
+        for shape_label_row in shape_label_rows:
+            print(shape_label_row)
+        for track_label_row in track_label_rows:
+            print(track_label_row)
+        
 task_1 = PythonOperator(
     task_id = "run_query_with_python",
     python_callable = task_test_query,
