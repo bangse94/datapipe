@@ -35,10 +35,10 @@ def task_test_query():
         )
         
         for shape_label_row in shape_label_rows:
-            annotation = hook.get_records("SELECT x.name, y.points FROM public.engine_label x JOIN public.engine_labeledshape y ON x.id = y.label_id WHERE y.label_id = %s", parameters=(shape_label_row[0]))
+            annotation = hook.get_records("SELECT x.name, y.points FROM public.engine_label x JOIN public.engine_labeledshape y ON x.id = y.label_id WHERE y.label_id = %s", parameters=([shape_label_row[0]]))
             print(annotation)
         for track_label_row in track_label_rows:
-            annotation = hook.get_records("SELECT x.name FROM public.engine_label x JOIN public.engine_labeledtrack y ON x.id = y.label_id WHERE y.label_id = %s", parameters=(track_label_row[0]))
+            annotation = hook.get_records("SELECT x.name FROM public.engine_label x JOIN public.engine_labeledtrack y ON x.id = y.label_id WHERE y.label_id = %s", parameters=([track_label_row[0]]))
             print(annotation)
         
 task_1 = PythonOperator(
