@@ -1,0 +1,966 @@
+[2023-09-21T09:00:22.129+0900] {processor.py:157} INFO - Started process (PID=21302) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:00:22.129+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:00:22.130+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:00:22.130+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:00:22.132+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:00:22.142+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:00:22.141+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:00:22.152+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:00:22.152+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:00:22.165+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:01:06.773+0900] {processor.py:157} INFO - Started process (PID=21494) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:01:06.775+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:01:06.776+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:01:06.775+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:01:06.778+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:01:06.787+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:01:06.787+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:01:06.797+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:01:06.797+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:01:06.809+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:01:37.888+0900] {processor.py:157} INFO - Started process (PID=21620) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:01:37.888+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:01:37.889+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:01:37.889+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:01:37.891+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:01:37.900+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:01:37.900+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:01:37.910+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:01:37.910+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:01:37.922+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:02:08.007+0900] {processor.py:157} INFO - Started process (PID=21741) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:02:08.009+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:02:08.009+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:02:08.009+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:02:08.012+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:02:08.021+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:02:08.020+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:02:08.030+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:02:08.030+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:02:08.042+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:02:41.712+0900] {processor.py:157} INFO - Started process (PID=21873) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:02:41.714+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:02:41.715+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:02:41.714+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:02:41.717+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:02:41.726+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:02:41.726+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:02:41.736+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:02:41.736+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:02:41.748+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:03:24.940+0900] {processor.py:157} INFO - Started process (PID=22051) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:03:24.940+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:03:24.941+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:03:24.941+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:03:24.944+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:03:24.954+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:03:24.954+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:03:24.966+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:03:24.966+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:03:24.978+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.041 seconds
+[2023-09-21T09:03:59.905+0900] {processor.py:157} INFO - Started process (PID=22189) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:03:59.907+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:03:59.908+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:03:59.908+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:03:59.910+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:03:59.919+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:03:59.919+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:03:59.929+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:03:59.929+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:03:59.940+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:04:30.725+0900] {processor.py:157} INFO - Started process (PID=22313) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:04:30.727+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:04:30.728+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:04:30.728+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:04:30.730+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:04:30.739+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:04:30.739+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:04:30.749+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:04:30.748+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:04:30.760+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:05:02.673+0900] {processor.py:157} INFO - Started process (PID=22440) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:05:02.675+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:05:02.676+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:05:02.675+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:05:02.678+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:05:02.687+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:05:02.687+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:05:02.697+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:05:02.697+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:05:02.708+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:05:37.223+0900] {processor.py:157} INFO - Started process (PID=22593) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:05:37.225+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:05:37.226+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:05:37.226+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:05:37.229+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:05:37.238+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:05:37.238+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:05:37.248+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:05:37.248+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:05:37.259+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:06:20.357+0900] {processor.py:157} INFO - Started process (PID=22766) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:06:20.357+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:06:20.358+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:06:20.358+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:06:20.360+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:06:20.369+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:06:20.369+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:06:20.379+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:06:20.379+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:06:20.391+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:07:01.190+0900] {processor.py:157} INFO - Started process (PID=22932) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:07:01.192+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:07:01.192+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:07:01.192+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:07:01.195+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:07:01.204+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:07:01.204+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:07:01.214+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:07:01.214+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:07:01.226+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:07:32.033+0900] {processor.py:157} INFO - Started process (PID=23056) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:07:32.035+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:07:32.036+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:07:32.036+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:07:32.039+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:07:32.048+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:07:32.047+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:07:32.057+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:07:32.057+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:07:32.068+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:08:02.815+0900] {processor.py:157} INFO - Started process (PID=23182) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:08:02.816+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:08:02.816+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:08:02.816+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:08:02.819+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:08:02.827+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:08:02.827+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:08:02.837+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:08:02.837+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:08:02.850+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:08:46.218+0900] {processor.py:157} INFO - Started process (PID=23354) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:08:46.220+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:08:46.221+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:08:46.221+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:08:46.223+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:08:46.232+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:08:46.232+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:08:46.242+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:08:46.242+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:08:46.254+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:09:17.321+0900] {processor.py:157} INFO - Started process (PID=23485) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:09:17.322+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:09:17.323+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:09:17.322+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:09:17.325+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:09:17.334+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:09:17.334+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:09:17.343+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:09:17.343+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:09:17.356+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:10:01.018+0900] {processor.py:157} INFO - Started process (PID=23659) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:10:01.019+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:10:01.020+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:10:01.020+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:10:01.022+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:10:01.031+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:10:01.031+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:10:01.041+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:10:01.041+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:10:01.053+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:10:31.798+0900] {processor.py:157} INFO - Started process (PID=23793) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:10:31.799+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:10:31.800+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:10:31.799+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:10:31.802+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:10:31.811+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:10:31.811+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:10:31.821+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:10:31.821+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:10:31.832+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.035 seconds
+[2023-09-21T09:11:02.051+0900] {processor.py:157} INFO - Started process (PID=23917) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:11:02.053+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:11:02.054+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:11:02.054+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:11:02.056+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:11:02.065+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:11:02.065+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:11:02.075+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:11:02.075+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:11:02.087+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:11:32.469+0900] {processor.py:157} INFO - Started process (PID=24039) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:11:32.470+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:11:32.471+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:11:32.471+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:11:32.474+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:11:32.482+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:11:32.482+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:11:32.492+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:11:32.492+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:11:32.504+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:12:04.319+0900] {processor.py:157} INFO - Started process (PID=24164) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:12:04.321+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:12:04.322+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:12:04.322+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:12:04.324+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:12:04.334+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:12:04.334+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:12:04.345+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:12:04.345+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:12:04.357+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.040 seconds
+[2023-09-21T09:12:45.419+0900] {processor.py:157} INFO - Started process (PID=24331) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:12:45.421+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:12:45.421+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:12:45.421+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:12:45.424+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:12:45.433+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:12:45.433+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:12:45.443+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:12:45.443+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:12:45.455+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:13:16.265+0900] {processor.py:157} INFO - Started process (PID=24453) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:13:16.267+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:13:16.268+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:13:16.268+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:13:16.270+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:13:16.279+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:13:16.279+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:13:16.289+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:13:16.289+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:13:16.301+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:13:48.202+0900] {processor.py:157} INFO - Started process (PID=24583) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:13:48.204+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:13:48.205+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:13:48.204+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:13:48.207+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:13:48.216+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:13:48.216+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:13:48.225+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:13:48.225+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:13:48.237+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:14:18.965+0900] {processor.py:157} INFO - Started process (PID=24706) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:14:18.967+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:14:18.968+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:14:18.967+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:14:18.970+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:14:18.979+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:14:18.979+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:14:18.990+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:14:18.990+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:14:19.002+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.039 seconds
+[2023-09-21T09:14:50.945+0900] {processor.py:157} INFO - Started process (PID=24836) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:14:50.947+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:14:50.948+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:14:50.948+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:14:50.951+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:14:50.962+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:14:50.962+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:14:50.973+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:14:50.972+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:14:50.985+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.041 seconds
+[2023-09-21T09:15:24.600+0900] {processor.py:157} INFO - Started process (PID=24976) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:15:24.602+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:15:24.603+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:15:24.602+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:15:24.605+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:15:24.614+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:15:24.614+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:15:24.624+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:15:24.624+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:15:24.635+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:15:54.720+0900] {processor.py:157} INFO - Started process (PID=25102) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:15:54.722+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:15:54.723+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:15:54.723+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:15:54.725+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:15:54.734+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:15:54.734+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:15:54.744+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:15:54.744+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:15:54.755+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:16:25.129+0900] {processor.py:157} INFO - Started process (PID=25225) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:16:25.132+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:16:25.132+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:16:25.132+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:16:25.135+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:16:25.144+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:16:25.144+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:16:25.154+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:16:25.154+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:16:25.166+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.039 seconds
+[2023-09-21T09:17:07.391+0900] {processor.py:157} INFO - Started process (PID=25393) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:17:07.392+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:17:07.392+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:17:07.392+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:17:07.395+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:17:07.403+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:17:07.403+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:17:07.414+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:17:07.414+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:17:07.426+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:17:38.228+0900] {processor.py:157} INFO - Started process (PID=25576) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:17:38.230+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:17:38.231+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:17:38.230+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:17:38.233+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:17:38.242+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:17:38.242+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:17:38.252+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:17:38.252+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:17:38.266+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.040 seconds
+[2023-09-21T09:18:11.347+0900] {processor.py:157} INFO - Started process (PID=25772) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:18:11.347+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:18:11.348+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:18:11.348+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:18:11.350+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:18:11.359+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:18:11.359+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:18:11.370+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:18:11.370+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:18:11.381+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:18:54.553+0900] {processor.py:157} INFO - Started process (PID=25980) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:18:54.556+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:18:54.557+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:18:54.556+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:18:54.560+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:18:54.568+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:18:54.568+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:18:54.578+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:18:54.578+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:18:54.589+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:19:34.544+0900] {processor.py:157} INFO - Started process (PID=26140) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:19:34.546+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:19:34.546+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:19:34.546+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:19:34.549+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:19:34.558+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:19:34.558+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:19:34.568+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:19:34.568+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:19:34.579+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:20:06.976+0900] {processor.py:157} INFO - Started process (PID=26272) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:20:06.977+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:20:06.977+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:20:06.977+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:20:06.980+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:20:06.988+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:20:06.988+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:20:06.998+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:20:06.998+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:20:07.010+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:20:37.815+0900] {processor.py:157} INFO - Started process (PID=26628) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:20:37.817+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:20:37.817+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:20:37.817+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:20:37.821+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:20:37.829+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:20:37.829+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:20:37.840+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:20:37.840+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:20:37.852+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.039 seconds
+[2023-09-21T09:21:09.310+0900] {processor.py:157} INFO - Started process (PID=26863) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:21:09.311+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:21:09.311+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:21:09.311+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:21:09.314+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:21:09.323+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:21:09.323+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:21:09.333+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:21:09.333+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:21:09.344+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:21:39.466+0900] {processor.py:157} INFO - Started process (PID=26981) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:21:39.468+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:21:39.469+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:21:39.469+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:21:39.471+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:21:39.480+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:21:39.480+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:21:39.494+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:21:39.493+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:21:39.508+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.043 seconds
+[2023-09-21T09:22:25.716+0900] {processor.py:157} INFO - Started process (PID=27168) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:22:25.719+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:22:25.720+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:22:25.720+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:22:25.723+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:22:25.732+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:22:25.732+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:22:25.742+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:22:25.742+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:22:25.754+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.039 seconds
+[2023-09-21T09:23:01.118+0900] {processor.py:157} INFO - Started process (PID=27310) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:23:01.120+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:23:01.120+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:23:01.120+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:23:01.123+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:23:01.132+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:23:01.131+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:23:01.142+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:23:01.142+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:23:01.154+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:23:32.334+0900] {processor.py:157} INFO - Started process (PID=27440) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:23:32.336+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:23:32.337+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:23:32.337+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:23:32.340+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:23:32.348+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:23:32.348+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:23:32.358+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:23:32.358+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:23:32.370+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:24:05.843+0900] {processor.py:157} INFO - Started process (PID=27572) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:24:05.846+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:24:05.846+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:24:05.846+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:24:05.849+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:24:05.858+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:24:05.858+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:24:05.868+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:24:05.868+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:24:05.879+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:24:38.232+0900] {processor.py:157} INFO - Started process (PID=27703) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:24:38.232+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:24:38.233+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:24:38.232+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:24:38.236+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:24:38.244+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:24:38.244+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:24:38.255+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:24:38.255+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:24:38.266+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:25:09.532+0900] {processor.py:157} INFO - Started process (PID=27826) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:25:09.534+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:25:09.534+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:25:09.534+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:25:09.537+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:25:09.546+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:25:09.546+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:25:09.556+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:25:09.555+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:25:09.567+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:25:48.909+0900] {processor.py:157} INFO - Started process (PID=27998) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:25:48.911+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:25:48.912+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:25:48.912+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:25:48.914+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:25:48.923+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:25:48.923+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:25:48.933+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:25:48.933+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:25:48.945+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:26:33.980+0900] {processor.py:157} INFO - Started process (PID=28180) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:26:33.982+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:26:33.982+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:26:33.982+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:26:33.985+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:26:33.994+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:26:33.993+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:26:34.004+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:26:34.004+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:26:34.015+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:27:06.851+0900] {processor.py:157} INFO - Started process (PID=28313) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:27:06.853+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:27:06.853+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:27:06.853+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:27:06.856+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:27:06.865+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:27:06.864+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:27:06.874+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:27:06.874+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:27:06.886+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:27:50.808+0900] {processor.py:157} INFO - Started process (PID=28496) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:27:50.810+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:27:50.810+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:27:50.810+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:27:50.813+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:27:50.822+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:27:50.822+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:27:50.832+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:27:50.832+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:27:50.844+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:28:21.540+0900] {processor.py:157} INFO - Started process (PID=28619) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:28:21.542+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:28:21.543+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:28:21.542+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:28:21.546+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:28:21.555+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:28:21.555+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:28:21.565+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:28:21.565+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:28:21.577+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.039 seconds
+[2023-09-21T09:29:04.893+0900] {processor.py:157} INFO - Started process (PID=28793) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:29:04.895+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:29:04.896+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:29:04.895+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:29:04.898+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:29:04.907+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:29:04.907+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:29:04.916+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:29:04.916+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:29:04.928+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:29:50.750+0900] {processor.py:157} INFO - Started process (PID=28980) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:29:50.752+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:29:50.753+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:29:50.753+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:29:50.755+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:29:50.764+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:29:50.764+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:29:50.774+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:29:50.774+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:29:50.786+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:30:22.945+0900] {processor.py:157} INFO - Started process (PID=29105) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:30:22.947+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:30:22.948+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:30:22.948+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:30:22.950+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:30:22.959+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:30:22.959+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:30:22.969+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:30:22.969+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:30:22.981+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:31:09.807+0900] {processor.py:157} INFO - Started process (PID=29304) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:31:09.809+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:31:09.810+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:31:09.810+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:31:09.812+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:31:09.821+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:31:09.821+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:31:09.831+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:31:09.831+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:31:09.843+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:31:41.744+0900] {processor.py:157} INFO - Started process (PID=29436) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:31:41.745+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:31:41.746+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:31:41.746+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:31:41.748+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:31:41.757+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:31:41.757+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:31:41.767+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:31:41.767+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:31:41.779+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:32:25.137+0900] {processor.py:157} INFO - Started process (PID=29608) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:32:25.138+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:32:25.139+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:32:25.138+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:32:25.141+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:32:25.150+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:32:25.150+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:32:25.160+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:32:25.160+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:32:25.172+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:32:55.715+0900] {processor.py:157} INFO - Started process (PID=29733) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:32:55.717+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:32:55.718+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:32:55.717+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:32:55.720+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:32:55.730+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:32:55.730+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:32:55.740+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:32:55.739+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:32:55.752+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:33:28.524+0900] {processor.py:157} INFO - Started process (PID=29862) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:33:28.527+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:33:28.527+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:33:28.527+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:33:28.530+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:33:28.539+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:33:28.538+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:33:28.548+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:33:28.548+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:33:28.560+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:33:59.356+0900] {processor.py:157} INFO - Started process (PID=29993) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:33:59.358+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:33:59.359+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:33:59.359+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:33:59.361+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:33:59.370+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:33:59.370+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:33:59.380+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:33:59.380+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:33:59.392+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:34:44.442+0900] {processor.py:157} INFO - Started process (PID=30173) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:34:44.444+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:34:44.444+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:34:44.444+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:34:44.446+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:34:44.456+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:34:44.455+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:34:44.465+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:34:44.465+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:34:44.478+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:35:26.705+0900] {processor.py:157} INFO - Started process (PID=30358) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:35:26.708+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:35:26.708+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:35:26.708+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:35:26.711+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:35:26.720+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:35:26.720+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:35:26.731+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:35:26.731+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:35:26.743+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.040 seconds
+[2023-09-21T09:36:12.938+0900] {processor.py:157} INFO - Started process (PID=30539) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:36:12.940+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:36:12.940+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:36:12.940+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:36:12.943+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:36:12.952+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:36:12.951+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:36:12.962+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:36:12.961+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:36:12.973+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:36:46.056+0900] {processor.py:157} INFO - Started process (PID=30740) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:36:46.057+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:36:46.057+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:36:46.057+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:36:46.060+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:36:46.069+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:36:46.069+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:36:46.079+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:36:46.079+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:36:46.090+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:37:20.206+0900] {processor.py:157} INFO - Started process (PID=30882) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:37:20.208+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:37:20.209+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:37:20.208+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:37:20.211+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:37:20.221+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:37:20.221+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:37:20.232+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:37:20.232+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:37:20.243+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.039 seconds
+[2023-09-21T09:37:51.420+0900] {processor.py:157} INFO - Started process (PID=31011) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:37:51.422+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:37:51.423+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:37:51.423+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:37:51.425+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:37:51.434+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:37:51.434+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:37:51.444+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:37:51.444+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:37:51.455+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:38:32.829+0900] {processor.py:157} INFO - Started process (PID=31179) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:38:32.830+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:38:32.831+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:38:32.831+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:38:32.834+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:38:32.842+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:38:32.842+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:38:32.853+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:38:32.852+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:38:32.871+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.044 seconds
+[2023-09-21T09:39:20.625+0900] {processor.py:157} INFO - Started process (PID=31366) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:39:20.627+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:39:20.628+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:39:20.628+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:39:20.630+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:39:20.640+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:39:20.640+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:39:20.650+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:39:20.650+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:39:20.662+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:39:52.148+0900] {processor.py:157} INFO - Started process (PID=31497) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:39:52.149+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:39:52.150+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:39:52.150+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:39:52.152+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:39:52.162+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:39:52.162+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:39:52.173+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:39:52.173+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:39:52.184+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:40:34.987+0900] {processor.py:157} INFO - Started process (PID=31681) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:40:34.989+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:40:34.990+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:40:34.990+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:40:34.992+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:40:35.002+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:40:35.002+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:40:35.012+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:40:35.011+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:40:35.023+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:41:18.353+0900] {processor.py:157} INFO - Started process (PID=31859) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:41:18.355+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:41:18.356+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:41:18.356+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:41:18.358+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:41:18.367+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:41:18.367+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:41:18.377+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:41:18.377+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:41:18.389+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:41:50.889+0900] {processor.py:157} INFO - Started process (PID=31989) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:41:50.890+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:41:50.890+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:41:50.890+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:41:50.893+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:41:50.902+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:41:50.902+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:41:50.911+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:41:50.911+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:41:50.924+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:42:22.867+0900] {processor.py:157} INFO - Started process (PID=32113) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:42:22.869+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:42:22.869+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:42:22.869+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:42:22.872+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:42:22.881+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:42:22.881+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:42:22.891+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:42:22.891+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:42:22.903+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:42:53.998+0900] {processor.py:157} INFO - Started process (PID=32237) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:42:54.000+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:42:54.000+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:42:54.000+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:42:54.003+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:42:54.012+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:42:54.012+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:42:54.022+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:42:54.021+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:42:54.033+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:43:28.518+0900] {processor.py:157} INFO - Started process (PID=32374) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:43:28.519+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:43:28.520+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:43:28.520+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:43:28.522+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:43:28.531+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:43:28.531+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:43:28.541+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:43:28.541+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:43:28.553+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:43:59.341+0900] {processor.py:157} INFO - Started process (PID=32499) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:43:59.343+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:43:59.344+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:43:59.344+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:43:59.346+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:43:59.355+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:43:59.355+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:43:59.365+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:43:59.365+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:43:59.377+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:44:43.345+0900] {processor.py:157} INFO - Started process (PID=32679) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:44:43.347+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:44:43.348+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:44:43.348+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:44:43.350+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:44:43.359+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:44:43.359+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:44:43.369+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:44:43.369+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:44:43.381+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:45:26.185+0900] {processor.py:157} INFO - Started process (PID=397) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:45:26.186+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:45:26.186+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:45:26.186+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:45:26.191+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:45:26.202+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:45:26.202+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:45:26.216+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:45:26.216+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:45:26.239+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.056 seconds
+[2023-09-21T09:46:00.413+0900] {processor.py:157} INFO - Started process (PID=529) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:46:00.415+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:46:00.416+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:46:00.416+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:46:00.418+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:46:00.427+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:46:00.427+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:46:00.437+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:46:00.437+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:46:00.450+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:46:31.239+0900] {processor.py:157} INFO - Started process (PID=658) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:46:31.241+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:46:31.242+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:46:31.242+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:46:31.244+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:46:31.252+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:46:31.252+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:46:31.262+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:46:31.262+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:46:31.274+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:47:03.179+0900] {processor.py:157} INFO - Started process (PID=785) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:47:03.181+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:47:03.182+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:47:03.181+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:47:03.184+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:47:03.193+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:47:03.193+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:47:03.202+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:47:03.202+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:47:03.214+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:47:36.953+0900] {processor.py:157} INFO - Started process (PID=924) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:47:36.955+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:47:36.956+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:47:36.955+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:47:36.958+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:47:36.966+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:47:36.966+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:47:36.976+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:47:36.976+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:47:36.987+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.035 seconds
+[2023-09-21T09:48:07.363+0900] {processor.py:157} INFO - Started process (PID=1046) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:48:07.365+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:48:07.366+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:48:07.366+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:48:07.368+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:48:07.377+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:48:07.377+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:48:07.386+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:48:07.386+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:48:07.398+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:48:38.896+0900] {processor.py:157} INFO - Started process (PID=1170) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:48:38.898+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:48:38.899+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:48:38.899+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:48:38.902+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:48:38.911+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:48:38.911+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:48:38.921+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:48:38.921+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:48:38.932+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:49:12.167+0900] {processor.py:157} INFO - Started process (PID=1301) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:49:12.169+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:49:12.169+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:49:12.169+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:49:12.172+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:49:12.180+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:49:12.180+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:49:12.190+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:49:12.190+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:49:12.202+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:49:42.420+0900] {processor.py:157} INFO - Started process (PID=1424) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:49:42.422+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:49:42.422+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:49:42.422+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:49:42.425+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:49:42.434+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:49:42.433+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:49:42.443+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:49:42.443+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:49:42.455+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:50:14.668+0900] {processor.py:157} INFO - Started process (PID=1554) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:50:14.670+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:50:14.670+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:50:14.670+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:50:14.673+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:50:14.681+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:50:14.681+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:50:14.691+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:50:14.691+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:50:14.704+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:50:59.190+0900] {processor.py:157} INFO - Started process (PID=1748) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:50:59.192+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:50:59.192+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:50:59.192+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:50:59.195+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:50:59.204+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:50:59.203+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:50:59.214+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:50:59.213+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:50:59.228+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.040 seconds
+[2023-09-21T09:51:43.472+0900] {processor.py:157} INFO - Started process (PID=1923) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:51:43.473+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:51:43.474+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:51:43.473+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:51:43.476+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:51:43.485+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:51:43.485+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:51:43.495+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:51:43.495+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:51:43.507+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:52:16.026+0900] {processor.py:157} INFO - Started process (PID=2053) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:52:16.028+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:52:16.029+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:52:16.029+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:52:16.031+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:52:16.041+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:52:16.040+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:52:16.051+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:52:16.051+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:52:16.062+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:53:01.064+0900] {processor.py:157} INFO - Started process (PID=2234) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:53:01.066+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:53:01.066+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:53:01.066+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:53:01.069+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:53:01.078+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:53:01.078+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:53:01.088+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:53:01.088+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:53:01.101+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.039 seconds
+[2023-09-21T09:53:36.164+0900] {processor.py:157} INFO - Started process (PID=2373) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:53:36.167+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:53:36.167+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:53:36.167+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:53:36.170+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:53:36.179+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:53:36.179+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:53:36.191+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:53:36.190+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:53:36.203+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.041 seconds
+[2023-09-21T09:54:06.729+0900] {processor.py:157} INFO - Started process (PID=2496) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:54:06.729+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:54:06.730+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:54:06.730+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:54:06.733+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:54:06.742+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:54:06.742+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:54:06.752+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:54:06.752+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:54:06.763+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:54:37.844+0900] {processor.py:157} INFO - Started process (PID=2619) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:54:37.846+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:54:37.847+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:54:37.847+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:54:37.849+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:54:37.858+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:54:37.858+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:54:37.868+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:54:37.868+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:54:37.880+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:55:09.752+0900] {processor.py:157} INFO - Started process (PID=2749) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:55:09.752+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:55:09.753+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:55:09.753+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:55:09.755+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:55:09.764+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:55:09.764+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:55:09.774+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:55:09.774+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:55:09.786+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T09:55:54.504+0900] {processor.py:157} INFO - Started process (PID=2941) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:55:54.506+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:55:54.506+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:55:54.506+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:55:54.509+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:55:54.518+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:55:54.517+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:55:54.527+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:55:54.527+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:55:54.539+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:56:28.580+0900] {processor.py:157} INFO - Started process (PID=3076) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:56:28.582+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:56:28.582+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:56:28.582+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:56:28.585+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:56:28.597+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:56:28.597+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:56:28.607+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:56:28.606+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:56:28.618+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.040 seconds
+[2023-09-21T09:56:58.692+0900] {processor.py:157} INFO - Started process (PID=3198) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:56:58.693+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:56:58.693+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:56:58.693+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:56:58.696+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:56:58.704+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:56:58.704+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:56:58.715+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:56:58.715+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:56:58.727+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:57:31.393+0900] {processor.py:157} INFO - Started process (PID=3329) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:57:31.394+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:57:31.395+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:57:31.394+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:57:31.397+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:57:31.406+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:57:31.406+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:57:31.416+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:57:31.416+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:57:31.429+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:58:05.075+0900] {processor.py:157} INFO - Started process (PID=3466) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:58:05.077+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:58:05.078+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:58:05.077+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:58:05.080+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:58:05.089+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:58:05.089+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:58:05.099+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:58:05.099+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:58:05.111+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:58:39.040+0900] {processor.py:157} INFO - Started process (PID=3599) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:58:39.042+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:58:39.042+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:58:39.042+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:58:39.045+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:58:39.053+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:58:39.053+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:58:39.064+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:58:39.064+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:58:39.076+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T09:59:12.146+0900] {processor.py:157} INFO - Started process (PID=3729) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:59:12.148+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:59:12.149+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:59:12.148+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:59:12.151+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:59:12.160+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:59:12.160+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:59:12.170+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:59:12.170+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:59:12.182+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T09:59:43.056+0900] {processor.py:157} INFO - Started process (PID=3859) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:59:43.057+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T09:59:43.057+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:59:43.057+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:59:43.060+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T09:59:43.069+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:59:43.068+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T09:59:43.079+0900] {logging_mixin.py:151} INFO - [2023-09-21T09:59:43.079+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T09:59:43.091+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:00:13.792+0900] {processor.py:157} INFO - Started process (PID=3983) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:00:13.794+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:00:13.794+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:00:13.794+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:00:13.797+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:00:13.806+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:00:13.806+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:00:13.815+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:00:13.815+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:00:13.827+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:01:00.678+0900] {processor.py:157} INFO - Started process (PID=4189) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:01:00.680+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:01:00.681+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:01:00.681+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:01:00.683+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:01:00.692+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:01:00.692+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:01:00.761+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:01:00.761+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:01:00.772+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.095 seconds
+[2023-09-21T10:01:31.506+0900] {processor.py:157} INFO - Started process (PID=4313) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:01:31.508+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:01:31.508+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:01:31.508+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:01:31.510+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:01:31.519+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:01:31.519+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:01:31.529+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:01:31.528+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:01:31.541+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:02:03.699+0900] {processor.py:157} INFO - Started process (PID=4436) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:02:03.701+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:02:03.702+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:02:03.701+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:02:03.704+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:02:03.713+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:02:03.713+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:02:03.724+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:02:03.724+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:02:03.791+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.093 seconds
+[2023-09-21T10:02:36.459+0900] {processor.py:157} INFO - Started process (PID=4569) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:02:36.461+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:02:36.461+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:02:36.461+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:02:36.464+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:02:36.473+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:02:36.473+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:02:36.483+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:02:36.483+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:02:36.496+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.039 seconds
+[2023-09-21T10:03:06.721+0900] {processor.py:157} INFO - Started process (PID=4691) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:03:06.724+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:03:06.725+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:03:06.725+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:03:06.728+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:03:06.738+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:03:06.737+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:03:06.747+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:03:06.747+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:03:06.816+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.096 seconds
+[2023-09-21T10:03:38.793+0900] {processor.py:157} INFO - Started process (PID=4821) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:03:38.795+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:03:38.796+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:03:38.796+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:03:38.798+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:03:38.807+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:03:38.807+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:03:38.817+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:03:38.817+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:03:38.829+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:04:12.539+0900] {processor.py:157} INFO - Started process (PID=4952) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:04:12.541+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:04:12.542+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:04:12.542+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:04:12.545+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:04:12.553+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:04:12.553+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:04:12.563+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:04:12.563+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:04:12.633+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.095 seconds
+[2023-09-21T10:04:44.612+0900] {processor.py:157} INFO - Started process (PID=5086) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:04:44.614+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:04:44.615+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:04:44.615+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:04:44.617+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:04:44.626+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:04:44.626+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:04:44.692+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:04:44.692+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:04:44.705+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.094 seconds
+[2023-09-21T10:05:16.081+0900] {processor.py:157} INFO - Started process (PID=5210) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:05:16.084+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:05:16.084+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:05:16.084+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:05:16.087+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:05:16.095+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:05:16.095+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:05:16.105+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:05:16.105+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:05:16.117+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:05:47.213+0900] {processor.py:157} INFO - Started process (PID=5351) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:05:47.215+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:05:47.215+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:05:47.215+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:05:47.218+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:05:47.227+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:05:47.227+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:05:47.293+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:05:47.293+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:05:47.305+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.094 seconds
+[2023-09-21T10:06:21.004+0900] {processor.py:157} INFO - Started process (PID=5485) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:06:21.006+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:06:21.007+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:06:21.007+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:06:21.009+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:06:21.018+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:06:21.018+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:06:21.027+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:06:21.027+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:06:21.040+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:06:52.688+0900] {processor.py:157} INFO - Started process (PID=5615) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:06:52.690+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:06:52.691+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:06:52.690+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:06:52.693+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:06:52.702+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:06:52.702+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:06:52.712+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:06:52.712+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:06:52.725+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:07:27.792+0900] {processor.py:157} INFO - Started process (PID=5753) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:07:27.794+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:07:27.794+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:07:27.794+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:07:27.797+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:07:27.805+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:07:27.805+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:07:27.815+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:07:27.815+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:07:27.827+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:08:12.189+0900] {processor.py:157} INFO - Started process (PID=5928) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:08:12.189+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:08:12.190+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:08:12.190+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:08:12.193+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:08:12.201+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:08:12.201+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:08:12.211+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:08:12.211+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:08:12.224+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:08:52.621+0900] {processor.py:157} INFO - Started process (PID=6094) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:08:52.623+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:08:52.624+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:08:52.624+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:08:52.626+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:08:52.635+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:08:52.635+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:08:52.645+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:08:52.645+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:08:52.657+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:09:24.684+0900] {processor.py:157} INFO - Started process (PID=6223) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:09:24.686+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:09:24.686+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:09:24.686+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:09:24.689+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:09:24.698+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:09:24.697+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:09:24.707+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:09:24.707+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:09:24.720+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:09:56.660+0900] {processor.py:157} INFO - Started process (PID=6355) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:09:56.662+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:09:56.662+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:09:56.662+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:09:56.665+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:09:56.674+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:09:56.674+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:09:56.685+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:09:56.685+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:09:56.697+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.039 seconds
+[2023-09-21T10:10:39.716+0900] {processor.py:157} INFO - Started process (PID=6540) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:10:39.719+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:10:39.720+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:10:39.720+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:10:39.722+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:10:39.731+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:10:39.731+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:10:39.741+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:10:39.741+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:10:39.753+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:11:12.424+0900] {processor.py:157} INFO - Started process (PID=6670) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:11:12.424+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:11:12.425+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:11:12.425+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:11:12.428+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:11:12.436+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:11:12.436+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:11:12.446+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:11:12.446+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:11:12.458+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.036 seconds
+[2023-09-21T10:11:42.531+0900] {processor.py:157} INFO - Started process (PID=6787) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:11:42.534+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:11:42.534+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:11:42.534+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:11:42.537+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:11:42.546+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:11:42.545+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:11:42.555+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:11:42.555+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:11:42.567+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:12:15.243+0900] {processor.py:157} INFO - Started process (PID=6917) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:12:15.244+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:12:15.244+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:12:15.244+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:12:15.247+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:12:15.255+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:12:15.255+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:12:15.265+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:12:15.265+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:12:15.278+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:12:57.339+0900] {processor.py:157} INFO - Started process (PID=7091) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:12:57.341+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:12:57.341+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:12:57.341+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:12:57.344+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:12:57.353+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:12:57.353+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:12:57.364+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:12:57.364+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:12:57.378+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.041 seconds
+[2023-09-21T10:13:42.415+0900] {processor.py:157} INFO - Started process (PID=7272) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:13:42.418+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:13:42.418+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:13:42.418+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:13:42.421+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:13:42.429+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:13:42.429+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:13:42.439+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:13:42.439+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:13:42.452+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:14:14.243+0900] {processor.py:157} INFO - Started process (PID=7396) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:14:14.244+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:14:14.244+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:14:14.244+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:14:14.247+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:14:14.256+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:14:14.256+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:14:14.266+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:14:14.266+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:14:14.279+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:14:58.233+0900] {processor.py:157} INFO - Started process (PID=7577) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:14:58.235+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:14:58.235+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:14:58.235+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:14:58.238+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:14:58.247+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:14:58.247+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:14:58.257+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:14:58.257+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:14:58.269+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:15:42.367+0900] {processor.py:157} INFO - Started process (PID=7766) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:15:42.369+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:15:42.370+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:15:42.370+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:15:42.372+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:15:42.381+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:15:42.381+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:15:42.391+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:15:42.391+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:15:42.404+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:16:14.878+0900] {processor.py:157} INFO - Started process (PID=7896) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:16:14.879+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:16:14.879+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:16:14.879+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:16:14.882+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:16:14.891+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:16:14.891+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:16:14.902+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:16:14.902+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:16:14.914+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:16:46.119+0900] {processor.py:157} INFO - Started process (PID=8026) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:16:46.120+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:16:46.120+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:16:46.120+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:16:46.122+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:16:46.131+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:16:46.131+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:16:46.141+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:16:46.141+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:16:46.154+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:17:19.437+0900] {processor.py:157} INFO - Started process (PID=8157) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:17:19.440+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:17:19.440+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:17:19.440+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:17:19.443+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:17:19.452+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:17:19.452+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:17:19.462+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:17:19.462+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:17:19.474+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.039 seconds
+[2023-09-21T10:18:03.133+0900] {processor.py:157} INFO - Started process (PID=8331) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:18:03.135+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:18:03.135+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:18:03.135+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:18:03.138+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:18:03.146+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:18:03.146+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:18:03.157+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:18:03.157+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:18:03.169+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.038 seconds
+[2023-09-21T10:18:36.207+0900] {processor.py:157} INFO - Started process (PID=8463) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:18:36.207+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:18:36.208+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:18:36.207+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:18:36.210+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:18:36.220+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:18:36.220+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:18:36.230+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:18:36.230+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:18:36.242+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:19:07.030+0900] {processor.py:157} INFO - Started process (PID=8591) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:19:07.033+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:19:07.033+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:19:07.033+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:19:07.035+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:19:07.044+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:19:07.044+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:19:07.054+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:19:07.054+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:19:07.066+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.037 seconds
+[2023-09-21T10:19:41.299+0900] {processor.py:157} INFO - Started process (PID=8723) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:19:41.301+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:19:41.301+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:19:41.301+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:19:41.304+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:19:41.313+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:19:41.313+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:19:41.324+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:19:41.323+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:19:41.336+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.040 seconds
+[2023-09-21T10:20:13.523+0900] {processor.py:157} INFO - Started process (PID=8854) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:20:13.525+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:20:13.526+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:20:13.526+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:20:13.530+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:20:13.538+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:20:13.538+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:20:13.548+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:20:13.548+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:20:13.561+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.040 seconds
+[2023-09-21T10:20:54.776+0900] {processor.py:157} INFO - Started process (PID=9127) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:20:54.779+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:20:54.779+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:20:54.779+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:20:54.782+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:20:54.792+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:20:54.791+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:20:54.803+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:20:54.803+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:20:54.815+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.041 seconds
+[2023-09-21T10:21:40.969+0900] {processor.py:157} INFO - Started process (PID=9613) to work on /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:21:40.971+0900] {processor.py:829} INFO - Processing file /home/sjpark/airflow/dags/test.py for tasks to queue
+[2023-09-21T10:21:40.971+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:21:40.971+0900] {dagbag.py:539} INFO - Filling up the DagBag from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:21:40.974+0900] {processor.py:839} INFO - DAG(s) dict_keys(['test-dag']) retrieved from /home/sjpark/airflow/dags/test.py
+[2023-09-21T10:21:40.984+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:21:40.984+0900] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T10:21:40.996+0900] {logging_mixin.py:151} INFO - [2023-09-21T10:21:40.996+0900] {dag.py:3696} INFO - Setting next_dagrun for test-dag to None, run_after=None
+[2023-09-21T10:21:41.009+0900] {processor.py:179} INFO - Processing /home/sjpark/airflow/dags/test.py took 0.041 seconds
