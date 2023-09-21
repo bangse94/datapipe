@@ -25,13 +25,13 @@ dag = DAG(
 def task_test_query():
     hook = PostgresHook(postgres_conn_id='cvat_postgres')
     
-    job_ids = hook.get_records("SELECT x.id FROM public.engine_job x WHERE status = 'acceptance' and x.update_date < current_date - 1 and x.update_date >= current_date")
+    job_ids = hook.get_records("SELECT x.id FROM public.engine_job x WHERE x.stage = 'acceptance' and x.updated_date < current_date and x.updated_date >= current_date-1")
     
     for job_id in job_ids:
-        shape_label_rows = hook.get_records("SELECT x.label_id, x.points FROM public.engine_labelshape x WHERE x.job_id = %s", parameters=(job_id))
+        shape_label_rows = hook.get_records("SELECT x.label_id, x.points FROM public.engine_labeledshape x WHERE x.job_id = %s", parameters=(job_id))
         #track_label_rows = hook.get_records("SELECT id, label_id points FROM public.engine_trackedshape WHERE job_id = %s", parameters=(job_id))
         track_label_rows = hook.get_records(
-            "SELECT a.label_id, a.points FROM public.engine_labeltracked a JOIN public.engine_trackedshape b ON a.id = b.track_id WHERE a.job_id = %s", parameters=(job_id)
+            "SELECT a.label_id, b.points FROM public.engine_labeledtrack a JOIN public.engine_trackedshape b ON a.id = b.track_id WHERE a.job_id = %s", parameters=(job_id)
         )
         
         for shape_label_row in shape_label_rows:
