@@ -2,7 +2,7 @@ import os
 import io
 
 from datetime import datetime
-
+from airflow.utils import days_ago
 from airflow import DAG
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.models.connection import Connection
@@ -14,6 +14,16 @@ con = Connection(
     conn_type = 'postgres',
     login = 'root',
     password = ''
+)
+
+default_args = {
+    "start_date ": days_ago(n=1)
+}
+
+dag = DAG(
+    dag_id = "test-dag",
+    default_args = default_args,
+    schedule_interval = "@once"
 )
 
 def task_test_query():
@@ -29,3 +39,5 @@ task_1 = PythonOperator(
     python_callable = task_test_query,
     dag = dag
 )
+
+task_1
