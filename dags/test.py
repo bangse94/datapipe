@@ -34,26 +34,25 @@ def task_test_query():
         track_label_rows = hook.get_records(
             "SELECT a.label_id FROM public.engine_labeledtrack a JOIN public.engine_trackedshape b ON a.id = b.track_id WHERE a.job_id = %s", parameters=(job_id)
         )
-        print("shape",shape_label_rows)
-        print("track",track_label_rows)
         
-        for shape_label_row in shape_label_rows:
-            annotation = hook.get_records("SELECT x.name, y.points FROM public.engine_label x, public.engine_labeledshape y WHERE x.id = y.label_id AND y.label_id = %s", parameters=([shape_label_row[0]]))
-            frame_nums = hook.get_records("SELECT x.frame FROM public.engine_labeledshape x WHERE x.label_id = %s", parameters=([shape_label_row[0]]))
-            segment_id = hook.get_records("SELECT x.segment_id FROM public.engine_job x WHERE x.id = %s", parameters=(job_id))
-            task_id = hook.get_records("SELECT x.task_id FROM public.engine_segment x WHERE x.id = %s", parameters=(segment_id))
-            data_id = hook.get_records("SELECT x.data_id FROM public.engine_task x WHERE x.id = %s", parameters=(task_id))
-            for frame_num in frame_nums:
-                file_name = hook.get_records("SELECT x.path FROM public.engine_image x WHERE x.data_id = %s and x.frame = %s", parameters=(data_id[0], frame_num[0]))
+        frame_nums = hook.get_records("SELECT x.frame FROM public.engine_labeledshape x WHERE x.label_id = %s", parameters=([shape_label_row[0]]))
+        segment_id = hook.get_records("SELECT x.segment_id FROM public.engine_job x WHERE x.id = %s", parameters=(job_id))
+        task_id = hook.get_records("SELECT x.task_id FROM public.engine_segment x WHERE x.id = %s", parameters=(segment_id))
+        data_id = hook.get_records("SELECT x.data_id FROM public.engine_task x WHERE x.id = %s", parameters=(task_id))
+        for frame_num in frame_nums:
+            file_name = hook.get_records("SELECT x.path FROM public.engine_image x WHERE x.data_id = %s and x.frame = %s", parameters=(data_id[0], frame_num[0]))
+            for shape_label_row in shape_label_rows:
+                annotation = hook.get_records("SELECT x.name, y.points FROM public.engine_label x, public.engine_labeledshape y WHERE x.id = y.label_id AND y.label_id = %s", parameters=([shape_label_row[0]]))
                 res.append([file_name, annotation])
-        for track_label_row in track_label_rows:
-            annotation = hook.get_records("SELECT x.name, z.points FROM public.engine_label x, public.engine_labeledtrack y, public.engine_trackedshape z WHERE x.id = y.label_id and z.track_id = y.id and y.label_id = %s", parameters=([track_label_row[0],]))
-            frame_nums = hook.get_records("SELECT x.frame FROM public.engine_labeledtrack x WHERE x.label_id = %s", parameters=([track_label_row[0]]))
-            segment_id = hook.get_records("SELECT x.segment_id FROM public.engine_job x WHERE x.id = %s", parameters=(job_id))
-            task_id = hook.get_records("SELECT x.task_id FROM public.engine_segment x WHERE x.id = %s", parameters=(segment_id))
-            data_id = hook.get_records("SELECT x.data_id FROM public.engine_task x WHERE x.id = %s", parameters=(task_id))
-            for frame_num in frame_nums:
-                file_name = hook.get_records("SELECT x.path FROM public.engine_image x WHERE x.data_id = %s and x.frame = %s", parameters=(data_id[0], frame_num[0]))
+        
+        frame_nums = hook.get_records("SELECT x.frame FROM public.engine_labeledtrack x WHERE x.label_id = %s", parameters=([track_label_row[0]]))
+        segment_id = hook.get_records("SELECT x.segment_id FROM public.engine_job x WHERE x.id = %s", parameters=(job_id))
+        task_id = hook.get_records("SELECT x.task_id FROM public.engine_segment x WHERE x.id = %s", parameters=(segment_id))
+        data_id = hook.get_records("SELECT x.data_id FROM public.engine_task x WHERE x.id = %s", parameters=(task_id))
+        for frame_num in frame_nums:
+            file_name = hook.get_records("SELECT x.path FROM public.engine_image x WHERE x.data_id = %s and x.frame = %s", parameters=(data_id[0], frame_num[0]))            
+            for track_label_row in track_label_rows:
+                annotation = hook.get_records("SELECT x.name, z.points FROM public.engine_label x, public.engine_labeledtrack y, public.engine_trackedshape z WHERE x.id = y.label_id and z.track_id = y.id and y.label_id = %s", parameters=([track_label_row[0],]))
                 res.append([file_name, annotation])
     print(res)
         
