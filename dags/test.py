@@ -34,11 +34,11 @@ def task_test_query():
             "SELECT x.path, y.name, z.points from public.engine_image x, public.engine_label y, public.engine_labeledshape z, \
                 public.engine_job a, public.engine_segment b, public.engine_task c \
                     WHERE z.job_id=%s AND y.id = z.label_id AND a.id = %s AND a.segment_id = b.id \
-                        AND b.task_id = c.id AND x.data_id = c.data_id AND z.frmae = x.frame", parameters=(job_id, job_id))
+                        AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
         track_label_rows = hook.get_records(
-            "SELECT x.path, y.name, z.points from public.engine_image x, public.engine_label y, public.engine_trackedshape z, public_engine_labeledtrack w\
-                public.engine_job a, public.engine_segment b, public.engine_task c\
-                    WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s\
+            "SELECT x.path, y.name, z.points from public.engine_image x, public.engine_label y, public.engine_trackedshape z, public.engine_labeledtrack w, \
+                public.engine_job a, public.engine_segment b, public.engine_task c \
+                    WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s \
                         AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
         for i in range(len(shape_label_rows)):
             print(shape_label_rows[i])
