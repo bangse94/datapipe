@@ -1,11 +1,16 @@
 import os
 import io
 
+import pandas as pd
+
 from datetime import datetime
 from airflow.utils.dates import days_ago
 from airflow import DAG
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.models.connection import Connection
+
+from ariflow.operators.bash import BashOperator
+from airflow.operators.dummy import DummyOperator
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 
@@ -17,10 +22,13 @@ con = Connection(
 )
 
 dag = DAG(
-    dag_id = "test-dag",
-    start_date = days_ago(1),
+    dag_id = "cvat-spark-dag",
+    start_date = days_ago(2),
     schedule_interval = "@once"
 )
+
+shape_label_rows = []
+track_label_rows = []
 
 def get_annotation_query():
     hook = PostgresHook(postgres_conn_id='cvat_postgres')
@@ -40,16 +48,40 @@ def get_annotation_query():
                 public.engine_job a, public.engine_segment b, public.engine_task c \
                     WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s \
                         AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
-        for i in range(len(shape_label_rows)):
-            print(shape_label_rows[i])
-        for j in range(len(track_label_rows)):
-            print(track_label_rows[j])
+        
+def read_and_concat_csv(shpae_rows: list, track_rows: list) -> None:
+    df = pd.Dataframe(data=shpae_rows+track_rows, columns=["file_name", "class", "points"])
+    df.to_csv("/home/sjpark/warehouse/test.csv", mode='a')
+            
+            
+def start_func():
+    print('DAG start')
 
+def end_func():
+    print('DAG finished')
     
-task_1 = PythonOperator(
-    task_id = "run_query_with_python",
+start_task = PythonOperator(
+    task_id = "start_task",
+    python_callable = start_func,
+    dag = dag
+)
+
+shape_to_csv = PythonOperator(
+    task_id = "shape_label_to_csv",
     python_callable = get_annotation_query,
     dag = dag
 )
 
-task_1
+track_to_csv = PythonOperator(
+    task_id = "track_label_to_csv",
+    python_callable = read_and_concat_csv(shape_label_rows, track_label_rows),
+    dag = dag
+)
+
+end_task = PythonOperator(
+    task_id = "end_task",
+    python_callable = end_func,
+    dag = dag
+)
+
+start_task >> shape_to_csv >> track_to_csv >> end_task
