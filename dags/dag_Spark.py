@@ -47,8 +47,14 @@ def get_annotation_query(**context):
                         AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
     
     df = pd.DataFrame(data=shape_label_rows+track_label_rows, columns=['file_name', 'class', 'points'])
-    df.drop_duplicates()
-    df.to_csv(f"/home/sjpark/test{datetime.now().strftime('%Y%m%d')}.csv",header=False, mode='a')       
+    try:
+        origin = pd.read_csv(f"/home/sjpark/test{datetime.now().strftime('%Y%m%d')}.csv", index_col=0)
+        df = pd.concat([origin, df], ignore_index=True)
+        df.drop_duplicates(subset=None, keep='first', inplace=True)
+        df.reset_index()
+    except:
+        pass    
+    df.to_csv(f"/home/sjpark/test{datetime.now().strftime('%Y%m%d')}.csv",header=True, mode='w')       
             
 def start_func():
     print('DAG start')
