@@ -11,11 +11,10 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.models.connection import Connection
 
 from airflow.operators.bash import BashOperator
-from airflow.operators.dummy import DummyOperator
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
-from airflow.providers.apache.hive.hooks.hive import *
-from airflow.providers.apache.spark import SparkOperator
+from airflow.hooks.hive_hooks import HiveServer2Hook
+from airflow.contrib.operators.spark_submit_operator import SparkSubmitOperator
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import from_csv
@@ -26,20 +25,6 @@ con = Connection(
     login = 'root',
     password = ''
 )
-
-spark = SparkSession \
-    .builder \
-        .appName("cvat-spark") \
-            .config("spark.sql.warehouse.dir", "/home/sjpark/warehouse") \
-                .enableHiveSupport() \
-                    .getOrCreate()
-                    
-df = spark.read.csv(f"/home/sjpark/test{datetime.now().strftime('%Y%m%d')}.csv", header=True)
-
-labels = df.select('file_name', 'class', 'points') \
-    .dropDuplicates(['file_name', 'class', 'points'])        
-
-labels.write.mode("append").insertInto("labels")
 
 dag = DAG(
     dag_id = "cvat-spark-dag",
@@ -88,7 +73,6 @@ def create_hdfs_table():
         FIELDS TERMINATED BY ','
         STORED AS TEXTFILE
     """
-
             
 def start_func():
     print('DAG start')
@@ -107,10 +91,10 @@ get_annotation = PythonOperator(
     python_callable = get_annotation_query,
     dag = dag
 )
-
+today = datetime.now().strftime('%Y%m%d')
 save_csv_hdfs = BashOperator(
     task_id = "save_hdfs",
-    bash_command = "hdfs dfs -put /home/sjpark/test{{ execution_date.strftime('%Y%m%d') }}.csv /home/sjpark/warehouse",
+    bash_command = "/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -put /home/sjpark/test{{ execution_date.strftime('%Y%m%d') }}.csv /home/sjpark/warehouse",
     dag = dag
 )
 
@@ -120,12 +104,26 @@ crate_hive_table = PythonOperator(
     dag = dag
 )
 
-spark_processing = SparkSubmitOperator(
-    task_id = "spark_processing",
-    application = "/home/sjpark/airflow/dags/spark_processing.py",
-    conn_id = "spark_master",
-    verbose = False,
-)
+spark = SparkSession \
+    .builder \
+        .appName("cvat-spark") \
+            .config("spark.sql.warehouse.dir", "/home/sjpark/warehouse") \
+                .enableHiveSupport() \
+                    .getOrCreate()
+                    
+#df = spark.read.csv(f"/home/sjpark/test{datetime.now().strftime('%Y%m%d')}.csv", header=True)
+#
+#labels = df.select('file_name', 'class', 'points') \
+#    .dropDuplicates(['file_name', 'class', 'points'])        
+#
+#labels.write.mode("append").insertInto("labels")
+#
+#spark_processing = SparkSubmitOperator(
+#    task_id = "spark_processing",
+#    application = "/home/sjpark/airflow/dags/spark_processing.py",
+#    conn_id = "spark_master",
+#    verbose = False,
+#)
 
 end_task = PythonOperator(
     task_id = "end_task",
@@ -133,4 +131,5 @@ end_task = PythonOperator(
     dag = dag
 )
 
-start_task >> get_annotation >> end_task
+#start_task >> get_annotation >> save_csv_hdfs >> crate_hive_table >> spark_processing >> end_task
+start_task >> get_annotation >> save_csv_hdfs >> crate_hive_table >> end_task
