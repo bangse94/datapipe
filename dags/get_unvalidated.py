@@ -95,15 +95,21 @@ get_annotation = PythonOperator(
     dag = dag
 )
 
+def remove_command():
+    if os.path.exists("/home/sjpark/all_labels.csv"):
+        return "/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/all_labels.csv"
+    else:
+        return "echo 'no file'"
+
 remove_csv_hdfs = BashOperator(
     task_id = "unvalid_remove_hdfs",
-    bash_command= "/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/unvalidated_labels{{ execution_date.strftime('%Y%m%d') }}.csv",
+    bash_command= "/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/all_labels.csv",
     dag = dag
 )
 
 save_csv_hdfs = BashOperator(
     task_id = "unvaild_save_hdfs",
-    bash_command = "/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -put /home/sjpark/unvalidated_labels{{ execution_date.strftime('%Y%m%d') }}.csv /home/sjpark/warehouse",
+    bash_command = "/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -put /home/sjpark/all_labels.csv /home/sjpark/warehouse",
     dag = dag
 )
 
