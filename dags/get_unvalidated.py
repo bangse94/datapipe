@@ -29,7 +29,7 @@ db_conn = Connection(
 dag = DAG(
     dag_id              = "get-unvalidated",
     start_date          = days_ago(2),
-    schedule_interval   = "@once"
+    schedule_interval   = "@daily"
 )
 
 def get_annotations():
@@ -59,10 +59,10 @@ def get_annotations():
         res = res+track_label_rows
         
     df = pd.DataFrame(data=res, columns=['file_name', 'class', 'points'])
-    df.to_csv(f"/home/sjpark/unvalidated_labels{ datetime.now().strftime('%Y%m%d') }.csv", header=False, mode = 'a')
-    print('job ids : ', len(job_ids))
-    print("shape : ", len(shape_label_rows))
-    print("track : ", len(track_label_rows))
+    if os.path.exists("/home/sjpark/all_labels.csv"):
+        df.to_csv(f"/home/sjpark/all_labels.csv", header=False, mode = 'w')
+    else:
+        df.to_csv(f"/home/sjpark/all_labels.csv", header=False, mode="a")
 
 def create_hive_table():
     hm = HiveServer2Hook(hiveserver2_conn_id="hiveserver2_warehouse")
@@ -94,12 +94,6 @@ get_annotation = PythonOperator(
     python_callable = get_annotations,
     dag = dag
 )
-
-def remove_command():
-    if os.path.exists("/home/sjpark/all_labels.csv"):
-        return "/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/all_labels.csv"
-    else:
-        return "echo 'no file'"
 
 remove_csv_hdfs = BashOperator(
     task_id = "unvalid_remove_hdfs",
