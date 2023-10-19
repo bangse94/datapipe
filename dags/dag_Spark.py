@@ -56,16 +56,14 @@ def get_annotation_query(**context):
                 public.engine_job a, public.engine_segment b, public.engine_task c \
                     WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s \
                         AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
-    
-    df = pd.DataFrame(data=shape_label_rows+track_label_rows, columns=['file_name', 'class', 'points'])
-    try:
-        origin = pd.read_csv(f"/home/sjpark/validated_{datetime.now().strftime('%Y%m%d')}.csv", index_col=0)
-        df = pd.concat([origin, df], ignore_index=True)
-        df.drop_duplicates(subset=None, keep='first', inplace=True)
-        df.reset_index()
-    except:
-        pass    
-    df.to_csv(f"/home/sjpark/validated_{datetime.now().strftime('%Y%m%d')}.csv",header=True, mode='w')
+        res = res+shape_label_rows
+        res = res+track_label_rows
+        
+    df = pd.DataFrame(data=res, columns=['file_name', 'class', 'points'])
+    if os.path.exists(f"/home/sjpark/validated_{datetime.now().strftime('%Y%m%d')}.csv"):
+        df.to_csv(f"/home/sjpark/validated_{datetime.now().strftime('%Y%m%d')}.csv",header=True, mode = 'w')
+    else:
+        df.to_csv(f"/home/sjpark/validated_{datetime.now().strftime('%Y%m%d')}.csv",header=True, mode="a")
     
 def create_hdfs_table():
     hm = HiveServer2Hook(hiveserver2_conn_id = "hiveserver2_warehouse")
@@ -100,11 +98,11 @@ get_annotation = PythonOperator(
 
 save_csv_hdfs = BashOperator(
     task_id = "save_hdfs",
-    bash_command = "/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -put /home/sjpark/validated_{datetime.now().strftime('%Y%m%d')}.csv /home/sjpark/warehouse",
+    bash_command = f"/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -put /home/sjpark/validated_{datetime.now().strftime('%Y%m%d')}.csv /home/sjpark/warehouse",
     dag = dag
 )
 
-crate_hive_table = PythonOperator(
+create_hive_table = PythonOperator(
     task_id = "create_hive_table",
     python_callable = create_hdfs_table,
     dag = dag
@@ -116,4 +114,4 @@ end_task = PythonOperator(
     dag = dag
 )
 
-start_task >> get_annotation >> remove_csv_hdfs >> save_csv_hdfs >> create_hive_table >> end_task
+start_task >> get_annotation >> save_csv_hdfs >> create_hive_table >> end_task
