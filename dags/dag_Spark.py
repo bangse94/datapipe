@@ -42,6 +42,7 @@ def get_annotation_query(**context):
                             and y.task_id = z.id
                             and x.segment_id = y.id
                             and x.stage = 'acceptance'
+                            and x.id = 5647
                             """)
     res = []
     for job_id in job_ids:
@@ -59,17 +60,35 @@ def get_annotation_query(**context):
                 WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s
                 AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame ORDER BY z.frame
             """
+            , parameters=(job_id, job_id)
         )
+        
+        f_path = hook.get_records(
+            """
+                SELECT x.path, x.frame FROM public.engine_image x, public.engine_job a, public.engine_task b, public.engine_segment c
+                WHERE a.id = %s AND a.id = c.id AND x.data_id = b.data_id AND c.task_id = b.id ORDER BY x.frame
+            """
+            , parameters=(job_id)
+        )
+        
         prev_track_shape = {} # {id : [frame, points]}
+        frame_path = {} # {frame : path}
+        
+        for idx in range(len(f_path)):
+            frame, path = f_path[idx][1], f_path[idx][0]
+            frame_path[int(frame)] = path
+        
         track_label_rows = []
         for idx_shape in range(len(tracked_shapes)):
             path, name, track_id, points, outside, frame = tracked_shapes[idx_shape]
             if outside == False:
                 track_label_rows.append([path, name, points])
+                if track_id in prev_track_shape:
+                    track_label_rows += [[frame_path[int(frame) - (i + 1)], name, prev_track_shape[track_id][1]] for i in range(abs(int(frame) - int(prev_track_shape[track_id][0]) - 1))]
                 prev_track_shape[track_id] = [frame, points]
             elif outside == True:
                 if track_id in prev_track_shape:
-                    track_label_rows += [[path, name, points] for _ in range(len(abs(int(frame) - int(prev_track_shape[track_id][0]) - 1)))]
+                    track_label_rows += [[frame_path[int(frame) - (i + 1)], name, points] for i in range(abs(int(frame) - int(prev_track_shape[track_id][0]) - 1))]
             
         
         #track_label_rows = hook.get_records(
@@ -117,6 +136,12 @@ get_annotation = PythonOperator(
     dag = dag
 )
 
+remove_csv_hdfs = BashOperator(
+    task_id = "unvalid_remove_hdfs",
+    bash_command= f"/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/validated_{datetime.now().strftime('%Y%m%d')}.csv",
+    dag = dag
+)
+
 save_csv_hdfs = BashOperator(
     task_id = "save_hdfs",
     bash_command = f"/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -put /home/sjpark/validated_{datetime.now().strftime('%Y%m%d')}.csv /home/sjpark/warehouse",
@@ -135,4 +160,5 @@ end_task = PythonOperator(
     dag = dag
 )
 
-start_task >> get_annotation >> save_csv_hdfs >> create_hive_table >> end_task
+#start_task >> get_annotation >> save_csv_hdfs >> create_hive_table >> end_task
+start_task >> get_annotation >> remove_csv_hdfs >> save_csv_hdfs >> create_hive_table >> end_task
