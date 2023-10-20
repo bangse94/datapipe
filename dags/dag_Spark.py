@@ -51,11 +51,32 @@ def get_annotation_query(**context):
                 public.engine_job a, public.engine_segment b, public.engine_task c \
                     WHERE z.job_id=%s AND y.id = z.label_id AND a.id = %s AND a.segment_id = b.id \
                         AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
-        track_label_rows = hook.get_records(
-            "SELECT x.path, y.name, z.points from public.engine_image x, public.engine_label y, public.engine_trackedshape z, public.engine_labeledtrack w, \
-                public.engine_job a, public.engine_segment b, public.engine_task c \
-                    WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s \
-                        AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
+        
+        tracked_shapes = hook.get_records(
+            """
+                SELECT x.path, y.name, z.track_id, z.points, z.outside, z.frame FROM public.engine_image x, public.engine_label y, public.engine_trackedshape z, public.engine_labeledtrack w,
+                public.engine_job a, public.engine_segment b, public.engine_task c
+                WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s
+                AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame ORDER BY z.frame
+            """
+        )
+        prev_track_shape = {} # {id : [frame, points]}
+        track_label_rows = []
+        for idx_shape in range(len(tracked_shapes)):
+            path, name, track_id, points, outside, frame = tracked_shapes[idx_shape]
+            if outside == False:
+                track_label_rows.append([path, name, points])
+                prev_track_shape[track_id] = [frame, points]
+            elif outside == True:
+                if track_id in prev_track_shape:
+                    track_label_rows += [[path, name, points] for _ in range(len(abs(int(frame) - int(prev_track_shape[track_id][0]) - 1)))]
+            
+        
+        #track_label_rows = hook.get_records(
+        #    "SELECT x.path, y.name, z.points from public.engine_image x, public.engine_label y, public.engine_trackedshape z, public.engine_labeledtrack w, \
+        #        public.engine_job a, public.engine_segment b, public.engine_task c \
+        #            WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s \
+        #                AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
         res = res+shape_label_rows
         res = res+track_label_rows
         
