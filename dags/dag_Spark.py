@@ -138,11 +138,11 @@ get_annotation = PythonOperator(
     dag = dag
 )
 
-remove_csv_hdfs = BashOperator(
-    task_id = "unvalid_remove_hdfs",
-    bash_command= f"/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/validated_{datetime.now().strftime('%Y%m%d')}.csv",
-    dag = dag
-)
+#remove_csv_hdfs = BashOperator(
+#    task_id = "unvalid_remove_hdfs",
+#    bash_command= f"/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/validated_{datetime.now().strftime('%Y%m%d')}.csv",
+#   dag = dag
+#)
 
 save_csv_hdfs = BashOperator(
     task_id = "save_hdfs",
@@ -162,5 +162,5 @@ end_task = PythonOperator(
     dag = dag
 )
 
-#start_task >> get_annotation >> save_csv_hdfs >> create_hive_table >> end_task
-start_task >> get_annotation >> remove_csv_hdfs >> save_csv_hdfs >> create_hive_table >> end_task
+start_task >> get_annotation >> save_csv_hdfs >> create_hive_table >> end_task
+#start_task >> get_annotation >> remove_csv_hdfs >> save_csv_hdfs >> create_hive_table >> end_task
