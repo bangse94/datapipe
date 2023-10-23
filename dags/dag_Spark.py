@@ -90,14 +90,8 @@ def get_annotation_query(**context):
                 if track_id in prev_track_shape:
                     if abs(int(frame) - int(prev_track_shape[track_id][0])) > 1:
                         track_label_rows += [[frame_path[int(frame) - (i + 1)], name, points] for i in range(abs(int(frame) - int(prev_track_shape[track_id][0]) - 1))]
-                    prev_track_shape[track_id] = [frame, points]
+                prev_track_shape[track_id] = [frame, points]
             
-        
-        #track_label_rows = hook.get_records(
-        #    "SELECT x.path, y.name, z.points from public.engine_image x, public.engine_label y, public.engine_trackedshape z, public.engine_labeledtrack w, \
-        #        public.engine_job a, public.engine_segment b, public.engine_task c \
-        #            WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s \
-        #                AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
         res = res+shape_label_rows
         res = res+track_label_rows
         
