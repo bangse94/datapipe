@@ -88,7 +88,9 @@ def get_annotation_query(**context):
                 prev_track_shape[track_id] = [frame, points]
             elif outside == True:
                 if track_id in prev_track_shape:
-                    track_label_rows += [[frame_path[int(frame) - (i + 1)], name, points] for i in range(abs(int(frame) - int(prev_track_shape[track_id][0]) - 1))]
+                    if abs(int(frame) - int(prev_track_shape[track_id][0])) > 1:
+                        track_label_rows += [[frame_path[int(frame) - (i + 1)], name, points] for i in range(abs(int(frame) - int(prev_track_shape[track_id][0]) - 1))]
+                    prev_track_shape[track_id] = [frame, points]
             
         
         #track_label_rows = hook.get_records(
