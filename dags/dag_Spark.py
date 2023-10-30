@@ -3,6 +3,7 @@ from os.path import expanduser, join, abspath
 import io
 
 import pandas as pd
+from collections import deque, defaultdict
 
 from datetime import datetime
 from airflow.utils.dates import days_ago
@@ -42,7 +43,6 @@ def get_annotation_query(**context):
                             and y.task_id = z.id
                             and x.segment_id = y.id
                             and x.stage = 'acceptance'
-                            and x.id = 5647
                             """)
     res = []
     for job_id in job_ids:
@@ -71,26 +71,62 @@ def get_annotation_query(**context):
             , parameters=(job_id)
         )
         
-        prev_track_shape = {} # {id : [frame, points]}
-        frame_path = {} # {frame : path}
+        start_stop_frame = hook.get_records(
+            '''
+                SELECT x.start_frame, x.stop_frame FROM public.engine_segment x, public.engine_job y
+                WHERE x.id = y.segment_id AND x.id = %s
+            '''
+            ,parameters=(job_id)
+        )
         
-        for idx in range(len(f_path)):
-            frame, path = f_path[idx][1], f_path[idx][0]
-            frame_path[int(frame)] = path
+        start_frame, stop_frame = start_stop_frame[0]
         
+        track_deq = deque(tracked_shapes)
         track_label_rows = []
-        for idx_shape in range(len(tracked_shapes)):
-            path, name, track_id, points, outside, frame = tracked_shapes[idx_shape]
-            if outside == False:
-                track_label_rows.append([path, name, points])
-                if track_id in prev_track_shape:
-                    track_label_rows += [[frame_path[int(frame) - (i + 1)], name, prev_track_shape[track_id][1]] for i in range(abs(int(frame) - int(prev_track_shape[track_id][0]) - 1))]
-                prev_track_shape[track_id] = [frame, points]
-            elif outside == True:
-                if track_id in prev_track_shape:
-                    if abs(int(frame) - int(prev_track_shape[track_id][0])) > 1:
-                        track_label_rows += [[frame_path[int(frame) - (i + 1)], name, points] for i in range(abs(int(frame) - int(prev_track_shape[track_id][0]) - 1))]
-                prev_track_shape[track_id] = [frame, points]
+        prev_label_rows = []
+        curr_label_rows = []
+        
+        frame_labels = defaultdict(lambda : [])
+        
+        while track_deq:
+            shape = track_deq.popleft()
+            path, name, _, points, _, frame = shape
+            frame_labels[frame].append(shape)
+
+        for frame_idx in range(start_frame, stop_frame - start_frame + 1):
+            if frame_idx == 0:
+                continue
+            curr_label_rows = frame_labels[frame_idx]
+            prev_label_rows = frame_labels[frame_idx-1]
+            temp_label_rows = []
+            prev_append_idxs = [0] * len(prev_label_rows)
+            for prev_idx, prev_label_row in enumerate(prev_label_rows):
+                _, prev_name, prev_track_id, prev_points, prev_outside, _ = prev_label_row
+                for curr_idx, curr_label_row in enumerate(curr_label_rows):
+                    curr_path, curr_name, curr_track_id, curr_points, curr_outside, curr_frame = curr_label_row
+                    if prev_track_id == curr_track_id and curr_outside == False:
+                        temp_label_rows.append((curr_path, curr_name, curr_track_id, curr_points, curr_outside, curr_frame))
+                        break
+                    elif prev_track_id == curr_track_id and curr_outside == True:
+                        break
+                else:
+                    temp_label_rows.append((f_path[frame_idx][0], prev_name, prev_track_id, prev_points, prev_outside, frame_idx))
+                    
+            for curr_idx, curr_label_row in enumerate(curr_label_rows):
+                curr_path, curr_name, curr_track_id, curr_points, curr_outside, curr_frame = curr_label_row
+                if curr_outside == False:
+                    temp_label_rows.append((curr_path, curr_name, curr_track_id, curr_points, curr_outside, curr_frame))
+                    
+            temp_label_rows = list(set(map(tuple, temp_label_rows)))
+                    
+            curr_label_rows = temp_label_rows.copy()
+            frame_labels[frame_idx] = curr_label_rows.copy()
+
+        for k, v in frame_labels.items():
+            for row in v:
+                path, name, _, points, _, frame = row
+                appended = (path, name, points)
+                track_label_rows.append(appended)
             
         res = res+shape_label_rows
         res = res+track_label_rows
@@ -132,11 +168,11 @@ get_annotation = PythonOperator(
     dag = dag
 )
 
-#remove_csv_hdfs = BashOperator(
-#    task_id = "unvalid_remove_hdfs",
-#    bash_command= f"/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/validated_{datetime.now().strftime('%Y%m%d')}.csv",
-#   dag = dag
-#)
+remove_csv_hdfs = BashOperator(
+    task_id = "unvalid_remove_hdfs",
+    bash_command= f"/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/validated_{datetime.now().strftime('%Y%m%d')}.csv",
+    dag = dag
+)
 
 save_csv_hdfs = BashOperator(
     task_id = "save_hdfs",
@@ -156,5 +192,6 @@ end_task = PythonOperator(
     dag = dag
 )
 
-start_task >> get_annotation >> save_csv_hdfs >> create_hive_table >> end_task
-#start_task >> get_annotation >> remove_csv_hdfs >> save_csv_hdfs >> create_hive_table >> end_task
+#
+# start_task >> get_annotation >> save_csv_hdfs >> create_hive_table >> end_task
+start_task >> get_annotation >> remove_csv_hdfs >> save_csv_hdfs >> create_hive_table >> end_task

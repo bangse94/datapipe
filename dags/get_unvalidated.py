@@ -5,6 +5,7 @@ import io
 import pandas as pd
 
 from datetime import datetime
+from collections import deque, defaultdict
 
 from airflow.utils.dates import days_ago
 from airflow import DAG
@@ -45,16 +46,88 @@ def get_annotations():
     
     res = []
     for job_id in job_ids:
+        # file_name, class_name, bbox
         shape_label_rows = hook.get_records(
             "SELECT x.path, y.name, z.points from public.engine_image x, public.engine_label y, public.engine_labeledshape z, \
                 public.engine_job a, public.engine_segment b, public.engine_task c \
                     WHERE z.job_id=%s AND y.id = z.label_id AND a.id = %s AND a.segment_id = b.id \
                         AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
-        track_label_rows = hook.get_records(
-            "SELECT x.path, y.name, z.points from public.engine_image x, public.engine_label y, public.engine_trackedshape z, public.engine_labeledtrack w, \
-                public.engine_job a, public.engine_segment b, public.engine_task c \
-                    WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s \
-                        AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame", parameters=(job_id, job_id))
+        
+        tracked_shapes = hook.get_records(
+            """
+                SELECT x.path, y.name, z.track_id, z.points, z.outside, z.frame FROM public.engine_image x, public.engine_label y, public.engine_trackedshape z, public.engine_labeledtrack w,
+                public.engine_job a, public.engine_segment b, public.engine_task c
+                WHERE w.job_id = %s AND z.track_id = w.id AND w.label_id = y.id AND a.id = %s
+                AND a.segment_id = b.id AND b.task_id = c.id AND x.data_id = c.data_id AND z.frame = x.frame ORDER BY z.frame
+            """
+            , parameters=(job_id, job_id)
+        )
+        
+        f_path = hook.get_records(
+            """
+                SELECT x.path, x.frame FROM public.engine_image x, public.engine_job a, public.engine_task b, public.engine_segment c
+                WHERE a.id = %s AND a.id = c.id AND x.data_id = b.data_id AND c.task_id = b.id ORDER BY x.frame
+            """
+            , parameters=(job_id)
+        )
+        
+        start_stop_frame = hook.get_records(
+            '''
+                SELECT x.start_frame, x.stop_frame FROM public.engine_segment x, public.engine_job y
+                WHERE x.id = y.segment_id AND x.id = %s
+            '''
+            ,parameters=(job_id)
+        )
+        
+        start_frame, stop_frame = start_stop_frame[0]
+        
+        track_deq = deque(tracked_shapes)
+        track_label_rows = []
+        prev_label_rows = []
+        curr_label_rows = []
+        
+        frame_labels = defaultdict(lambda : [])
+        
+        while track_deq:
+            shape = track_deq.popleft()
+            path, name, _, points, _, frame = shape
+            frame_labels[frame].append(shape)
+
+        for frame_idx in range(start_frame, stop_frame - start_frame + 1):
+            if frame_idx == 0:
+                continue
+            curr_label_rows = frame_labels[frame_idx]
+            prev_label_rows = frame_labels[frame_idx-1]
+            temp_label_rows = []
+            prev_append_idxs = [0] * len(prev_label_rows)
+            for prev_idx, prev_label_row in enumerate(prev_label_rows):
+                _, prev_name, prev_track_id, prev_points, prev_outside, _ = prev_label_row
+                for curr_idx, curr_label_row in enumerate(curr_label_rows):
+                    curr_path, curr_name, curr_track_id, curr_points, curr_outside, curr_frame = curr_label_row
+                    if prev_track_id == curr_track_id and curr_outside == False:
+                        temp_label_rows.append((curr_path, curr_name, curr_track_id, curr_points, curr_outside, curr_frame))
+                        break
+                    elif prev_track_id == curr_track_id and curr_outside == True:
+                        break
+                else:
+                    temp_label_rows.append((f_path[frame_idx][0], prev_name, prev_track_id, prev_points, prev_outside, frame_idx))
+                    
+            for curr_idx, curr_label_row in enumerate(curr_label_rows):
+                curr_path, curr_name, curr_track_id, curr_points, curr_outside, curr_frame = curr_label_row
+                if curr_outside == False:
+                    temp_label_rows.append((curr_path, curr_name, curr_track_id, curr_points, curr_outside, curr_frame))
+                    
+            temp_label_rows = list(set(map(tuple, temp_label_rows)))
+                    
+            curr_label_rows = temp_label_rows.copy()
+            frame_labels[frame_idx] = curr_label_rows.copy()
+
+        for k, v in frame_labels.items():
+            for row in v:
+                path, name, _, points, _, frame = row
+                appended = (path, name, points)
+                track_label_rows.append(appended)
+            
         res = res+shape_label_rows
         res = res+track_label_rows
         
