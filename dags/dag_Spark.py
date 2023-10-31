@@ -79,12 +79,23 @@ def get_annotation_query(**context):
             ,parameters=(job_id)
         )
         
+        deleted_frame = hook.get_records(
+            '''
+                SELECT x.deleted_frames FROM public.engine_data x, public.engine_job y, public.engine_task z, public.engine_segment w
+                WHERE y.id = %s AND z.data_id = x.id AND w.task_id = z.id AND y.segment_id = w.id 
+            '''
+            ,parameters=(job_id)
+        )
+        
+        deleted_frame = deleted_frame[0][0].split(',')
+        
         start_frame, stop_frame = start_stop_frame[0]
         
         track_deq = deque(tracked_shapes)
         track_label_rows = []
         prev_label_rows = []
         curr_label_rows = []
+        last_del_frame = -1
         
         frame_labels = defaultdict(lambda : [])
         
@@ -92,13 +103,30 @@ def get_annotation_query(**context):
             shape = track_deq.popleft()
             path, name, _, points, _, frame = shape
             frame_labels[frame].append(shape)
-
+        frame_cnt = 0
         for frame_idx in range(start_frame, stop_frame - start_frame + 1):
-            if frame_idx == 0:
-                continue
-            curr_label_rows = frame_labels[frame_idx]
-            prev_label_rows = frame_labels[frame_idx-1]
             temp_label_rows = []
+            if str(frame_idx) in deleted_frame:
+                last_del_frame = frame_idx
+                continue
+            if frame_idx == 0:
+                curr_label_rows = frame_labels[frame_idx]
+                for curr_idx, curr_label_row in enumerate(curr_label_rows):
+                    curr_path, curr_name, curr_track_id, curr_points, curr_outside, curr_frame = curr_label_row
+                    if curr_outside == False:
+                        temp_label_rows.append((curr_path, curr_name, curr_track_id, curr_points, curr_outside, curr_frame))
+                    
+                curr_label_rows = temp_label_rows.copy()
+                frame_labels[frame_idx] = curr_label_rows.copy()
+                frame_cnt = frame_idx
+                continue
+            if frame_idx == last_del_frame + 1:
+                curr_label_rows = frame_labels[frame_idx]
+                prev_label_rows = frame_labels[frame_cnt]
+            else:    
+                curr_label_rows = frame_labels[frame_idx]
+                prev_label_rows = frame_labels[frame_idx-1]
+            
             prev_append_idxs = [0] * len(prev_label_rows)
             for prev_idx, prev_label_row in enumerate(prev_label_rows):
                 _, prev_name, prev_track_id, prev_points, prev_outside, _ = prev_label_row
@@ -121,7 +149,7 @@ def get_annotation_query(**context):
                     
             curr_label_rows = temp_label_rows.copy()
             frame_labels[frame_idx] = curr_label_rows.copy()
-
+            frame_cnt = frame_idx
         for k, v in frame_labels.items():
             for row in v:
                 path, name, _, points, _, frame = row
@@ -168,11 +196,11 @@ get_annotation = PythonOperator(
     dag = dag
 )
 
-remove_csv_hdfs = BashOperator(
-    task_id = "unvalid_remove_hdfs",
-    bash_command= f"/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/validated_{datetime.now().strftime('%Y%m%d')}.csv",
-    dag = dag
-)
+#remove_csv_hdfs = BashOperator(
+#    task_id = "unvalid_remove_hdfs",
+#   bash_command= f"/home/sjpark/hadoop-3.2.4/bin/hdfs dfs -rm /home/sjpark/warehouse/validated_{datetime.now().strftime('%Y%m%d')}.csv",
+#    dag = dag
+#)
 
 save_csv_hdfs = BashOperator(
     task_id = "save_hdfs",
@@ -192,6 +220,6 @@ end_task = PythonOperator(
     dag = dag
 )
 
-#
-# start_task >> get_annotation >> save_csv_hdfs >> create_hive_table >> end_task
-start_task >> get_annotation >> remove_csv_hdfs >> save_csv_hdfs >> create_hive_table >> end_task
+
+start_task >> get_annotation >> save_csv_hdfs >> create_hive_table >> end_task
+#start_task >> get_annotation >> remove_csv_hdfs >> save_csv_hdfs >> create_hive_table >> end_task
