@@ -38,7 +38,8 @@ def get_annotations():
     job_ids = hook.get_records(
         """
             SELECT x.id FROM public.engine_job x, public.engine_segment y, public.engine_task z, public.engine_project w
-            WHERE z.project_id = 32 AND w.id = 32
+            WHERE  (z.project_id = 32 or z.project_id = 34) and (w.id = 32 or w.id = 34)
+            AND z.project_id = w.id
             AND y.task_id = z.id
             AND x.segment_id = y.id
         """

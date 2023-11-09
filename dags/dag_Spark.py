@@ -39,7 +39,8 @@ def get_annotation_query(**context):
     #job_ids = hook.get_records("SELECT x.id FROM public.engine_job x WHERE x.stage = 'acceptance' and x.updated_date < current_date and x.updated_date >= current_date-1")
     job_ids = hook.get_records("""
                             SELECT x.id FROM public.engine_job x, public.engine_segment y, public.engine_task z, public.engine_project w
-                            where z.project_id = 32 and w.id = 32
+                            where (z.project_id = 32 or z.project_id = 34) and (w.id = 32 or w.id = 34)
+                            and z.project_id = w.id
                             and y.task_id = z.id
                             and x.segment_id = y.id
                             and x.stage = 'acceptance'
