@@ -4,7 +4,6 @@ import io
 
 import pandas as pd
 from collections import deque, defaultdict
-
 from datetime import datetime
 from airflow.utils.dates import days_ago
 from airflow import DAG
